@@ -11,6 +11,15 @@ p {
     justify-content: center;
     align-items: flex-end;
 }
+
+img {
+    filter: grayscale(100%);
+}
+
+nav ul a {
+    font-size: 2rem;
+}
+
 #systemMessage {
         text-align: center;
         animation: 1s fadeIn;
@@ -48,7 +57,7 @@ p {
 
 @keyframes bootText {
     0%   {bottom: -1500px;}
-    100% {bottom: 5000px; display: none;}
+    100% {bottom: 6000px; display: none;}
 }
 
 @keyframes fadeIn {
