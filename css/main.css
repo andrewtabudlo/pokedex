@@ -9,7 +9,7 @@ p {
     font-size: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 #systemMessage {
         text-align: center;
@@ -17,7 +17,7 @@ p {
         animation-fill-mode: forwards;
         animation-delay: 3s;
         opacity: 0;
-        width: 45%;
+        width: 50%;
         margin: 0 auto;
 }
 
@@ -27,6 +27,15 @@ p {
 
 #bootBody {
     text-align: left;
+}
+
+#kantoButton {
+
+}
+
+.btn {
+    background-color: #28F781;
+    margin: 0 10px;
 }
 
 .bootText {
@@ -39,7 +48,7 @@ p {
 
 @keyframes bootText {
     0%   {bottom: -1500px;}
-    100% {bottom: 2500px; display: none;}
+    100% {bottom: 5000px; display: none;}
 }
 
 @keyframes fadeIn {
