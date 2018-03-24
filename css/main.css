@@ -5,20 +5,22 @@ body {
 }
 
 p {
-    color: #28F781;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+
+
 }
 
 img {
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 }
 
 nav ul a {
     font-size: 2rem;
 }
+
+li p {
+    color: #000;
+}
+
 
 #systemMessage {
         text-align: center;
@@ -28,6 +30,9 @@ nav ul a {
         opacity: 0;
         width: 50%;
         margin: 0 auto;
+        font-size: 30px;
+        color: #28F781;
+
 }
 
 #bootHeader {
@@ -53,7 +58,37 @@ nav ul a {
     animation-timing-function: linear;
     position: relative;
     width: 50%;
+    font-size: 30px;
+    color: #28F781;
 }
+
+/* label color */
+   .input-field label {
+     color: #28F781;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #28F781;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #28F781;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #28F781;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #28F781;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #28F781;
+   }
 
 @keyframes bootText {
     0%   {bottom: -1500px;}

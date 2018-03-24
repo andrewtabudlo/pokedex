@@ -49,6 +49,7 @@ let getArticuno = function(){
         getAbilities();
         let articuno = new Pokemon(data.id,data.name,data.sprites.front_default,types,data.weight,data.height,data.stats[3].base_stat,data.stats[4].base_stat,data.stats[5].base_stat,abilities);
         pokedex.addPokemon(articuno);
+        $('#pokemonOnePic').attr('src',pokedex.pokemon[0].image);
     }
 })};
 
@@ -78,7 +79,6 @@ let getMoltres = function(){
     }
 })};
 
-
 let getDragonite = function(){
     $.ajax({
     url: 'http://pokeapi.salestock.net/api/v2/pokemon/149/',
@@ -102,6 +102,12 @@ let getDragonite = function(){
         getAbilities();
         let dragonite = new Pokemon(data.id,data.name,data.sprites.front_default,types,data.weight,data.height,data.stats[3].base_stat,data.stats[4].base_stat,data.stats[5].base_stat,abilities);
         pokedex.addPokemon(dragonite);
+    },
+    complete: function() {
+        $('#kantoButton').addClass('pulse').removeClass('disabled');
+        $('#pokemonPic1').attr('src',pokedex.pokemon[0].image);
+        $('#pokemonPic2').attr('src',pokedex.pokemon[1].image);
+        $('#pokemonPic3').attr('src',pokedex.pokemon[2].image);
     }
 })};
 
@@ -111,8 +117,15 @@ getDragonite();
 
 console.log(pokedex);
 
+let createMenus = function() {
+    for (let i = 0; i < pokedex.length; i++){
+        $('<img></img>').html(pokemon[i].image).attr('class','pokeImage');
+
+    }
+};
+
 $('#kantoButton').click(function(){
     event.preventDefault();
-    $('#systemMessage').addClass('scale-out');
-    $('#menuScreen').addClass('scale-in');
+    $('#systemMessage').addClass('invisible');
+    $('#menuScreen').addClass('visible').removeClass('invisible');
 });
