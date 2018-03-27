@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class='scanlines'>
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,10 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
 
   </head>
-    <body>
-      <div class="invisible" id='menuScreen'>
+    <body class='scanlines'>
+      <div class="" id='menuScreen'>
         <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-          <a class="navbar-brand" href="#">TRAINER'S POKEDEX</a>
+          <a class="navbar-brand" href="#">DAENERYS'S POKEDEX</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -32,41 +32,157 @@
             </form>
           </div>
         </nav>
-          <div class="row">
-            <div class="col-sm d-flex justify-content-center">
+        <div class="row justify-content-center">
+          <div class="card-group">
+            <div class="col-sm-4">
               <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="" alt="Card image cap" id="pokemonPic1">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="card-body">
+                <h5 class="card-title" id="cardTitle1"></h5>
+                <ul class="nav nav-tabs card-header-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="stats1-tab" data-toggle="tab" href="#stats1" role="tab" aria-controls="home" aria-selected="true">Stats</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  id="abilities1-tab" data-toggle="tab" href="#abilities1" role="tab" aria-controls="profile" aria-selected="false">Abilities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="misc1-tab" data-toggle="tab" href="#misc1" role="tab" aria-controls="contact" aria-selected="false">Misc.</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="stats1" role="tabpanel" aria-labelledby="home-tab">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="progress">
+                          <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="hp1">HP:60/60<div>
+                        </div>
+                      </li>
+                      <li class="list-group-item" id="attack1">Attack:</li>
+                      <li class="list-group-item" id="defense1">Defense:</li>
+                    </ul>
                   </div>
-              </div>
-            </div>
-            <div class="col-sm d-flex justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="" alt="Card image cap" id="pokemonPic2">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="tab-pane fade" id="abilities1" role="tabpanel" aria-labelledby="profile-tab">
+                    <ul class="list-group list-group-flush" id="abilitiesList1">
+                    </ul>
                   </div>
-              </div>
-            </div>
-            <div class="col-sm d-flex justify-content-center">
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="" alt="Card image cap" id="pokemonPic3">
-                  <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="tab-pane fade" id="misc1" role="tabpanel" aria-labelledby="contact-tab">
+                    <ul class="list-group list-group-flush" id="miscList1">
+                      <li class="list-group-item" id=height1></li>
+                      <li class="list-group-item" id=weight1></li>
+                    </ul>
                   </div>
+                </div>
               </div>
             </div>
           </div>
+            <div class="col-sm-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="" alt="Card image cap" id="pokemonPic2">
+                  <div class="card-body">
+                    <h5 class="card-title" id="cardTitle2"></h5>
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="stats2-tab" data-toggle="tab" href="#stats2" role="tab" aria-controls="home" aria-selected="true">Stats</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  id="abilities2-tab" data-toggle="tab" href="#abilities2" role="tab" aria-controls="profile" aria-selected="false">Abilities</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="misc2-tab" data-toggle="tab" href="#misc2" role="tab" aria-controls="contact" aria-selected="false">Misc.</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="stats2" role="tabpanel" aria-labelledby="home-tab">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="hp2">HP:60/60<div>
+                            </div>
+                          </li>
+                          <li class="list-group-item" id="attack2">Attack:</li>
+                          <li class="list-group-item" id="defense2">Defense:</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="abilities2" role="tabpanel" aria-labelledby="profile-tab">
+                        <ul class="list-group list-group-flush" id="abilitiesList2">
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="misc2" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="list-group list-group-flush" id="miscList2">
+                          <li class="list-group-item" id=height2></li>
+                          <li class="list-group-item" id=weight2></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="" alt="Card image cap" id="pokemonPic3">
+                  <div class="card-body">
+                    <h5 class="card-title" id="cardTitle3"></h5>
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="stats3-tab" data-toggle="tab" href="#stats3" role="tab" aria-controls="home" aria-selected="true">Stats</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  id="abilities3-tab" data-toggle="tab" href="#abilities3" role="tab" aria-controls="profile" aria-selected="false">Abilities</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="misc3-tab" data-toggle="tab" href="#misc3" role="tab" aria-controls="contact" aria-selected="false">Misc.</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="stats3" role="tabpanel" aria-labelledby="home-tab">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="hp3">HP:60/60<div>
+                            </div>
+                          </li>
+                          <li class="list-group-item" id="attack3">Attack:</li>
+                          <li class="list-group-item" id="defense3">Defense:</li>
+                        </ul>
+                        </div>
+                        <div class="tab-pane fade" id="abilities3" role="tabpanel" aria-labelledby="profile-tab">
+                          <ul class="list-group list-group-flush" id="abilitiesList3">
+                          </ul>
+                        </div>
+                        <div class="tab-pane fade" id="misc3" role="tabpanel" aria-labelledby="contact-tab">
+                          <ul class="list-group list-group-flush" id="miscList3">
+                            <li class="list-group-item" id=height3></li>
+                            <li class="list-group-item" id=weight3></li>
+                          </ul>
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
       <main>
 
       </main>
         <div class="fixed-top" id='systemMessage'>
           <p id='bootHeader'>POKEDEX(K) V0.0.0.1</p>
-          <p id='bootBody'>COPYRIGHT 2018 ROBCO(R)<br>LOADER V0.1<br>EXEC VERSION 22.22<br>64k RAM SYSTEM<br>38911 BYTES FREE<br>3 POKEMON FOUND<br>LOAD ROM(1): <button class='btn disabled black-text' id='kantoButton'>KANTO.ISO</button><button class="btn disabled">JOHTO.ISO</button><button class="btn disabled">HOENN.ISO</button></p>
+          <p id='bootBody'>COPYRIGHT 2018 ROBCO(R)<br>
+                            LOADER V0.1<br>
+                            EXEC VERSION 22.22<br>
+                            64k RAM SYSTEM<br>
+                            38911 BYTES FREE<br>
+                            3 POKEMON FOUND<br>
+                            LOAD ROM(1): <button class='btn disabled black-text' id='kantoButton'>KANTO.ISO</button><button class="btn disabled">JOHTO.ISO</button><button class="btn disabled">HOENN.ISO</button></p>
         </div>
-        <div class="">
+        <div id="bootScroll">
           <p class='bootText'>01101000 01100101 01101100 01101100 01101111 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100000 01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01100110 01100001 01101100 01101100 01101111 01110101 01110100 00100000 01110100 01101000 01100101 01101101 01100101 01100100 00100000 01110000 01101111 01101011 01100101 01100100 01100101 01111000 00100001 00100000 01100111 01101111 01110100 01110100 01100001 00100000 01100011 01100001 01110100 01100011 01101000 00100000 01100101 01101101 00100000 01100001 01101100 01101100 00100001 </p>
           <p class='bootText'>01101000 01100101 01101100 01101100 01101111 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100000 01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01100110 01100001 01101100 01101100 01101111 01110101 01110100 00100000 01110100 01101000 01100101 01101101 01100101 01100100 00100000 01110000 01101111 01101011 01100101 01100100 01100101 01111000 00100001 00100000 01100111 01101111 01110100 01110100 01100001 00100000 01100011 01100001 01110100 01100011 01101000 00100000 01100101 01101101 00100000 01100001 01101100 01101100 00100001 </p>
           <p class='bootText'>01101000 01100101 01101100 01101100 01101111 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100000 01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01100110 01100001 01101100 01101100 01101111 01110101 01110100 00100000 01110100 01101000 01100101 01101101 01100101 01100100 00100000 01110000 01101111 01101011 01100101 01100100 01100101 01111000 00100001 00100000 01100111 01101111 01110100 01110100 01100001 00100000 01100011 01100001 01110100 01100011 01101000 00100000 01100101 01101101 00100000 01100001 01101100 01101100 00100001 </p>
@@ -74,6 +190,10 @@
           <p class='bootText'>01101000 01100101 01101100 01101100 01101111 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100000 01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01100110 01100001 01101100 01101100 01101111 01110101 01110100 00100000 01110100 01101000 01100101 01101101 01100101 01100100 00100000 01110000 01101111 01101011 01100101 01100100 01100101 01111000 00100001 00100000 01100111 01101111 01110100 01110100 01100001 00100000 01100011 01100001 01110100 01100011 01101000 00100000 01100101 01101101 00100000 01100001 01101100 01101100 00100001 </p>
           <p class='bootText'>01101000 01100101 01101100 01101100 01101111 00100000 01110111 01101111 01110010 01101100 01100100 00100001 00100000 01110100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01100110 01100001 01101100 01101100 01101111 01110101 01110100 00100000 01110100 01101000 01100101 01101101 01100101 01100100 00100000 01110000 01101111 01101011 01100101 01100100 01100101 01111000 00100001 00100000 01100111 01101111 01110100 01110100 01100001 00100000 01100011 01100001 01110100 01100011 01101000 00100000 01100101 01101101 00100000 01100001 01101100 01101100 00100001 </p>
         </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="js/main.js" type="text/javascript"></script>
     </body>
