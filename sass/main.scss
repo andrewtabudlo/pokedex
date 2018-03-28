@@ -1,0 +1,61 @@
+@import "partials/fonts";
+@import "partials/scanlines";
+@import "partials/animations";
+$pcGreen: #28F781;
+body {
+  font-size: 1.2rem;
+  font-family: 'early_gameboyregular';
+  background-image: url('/images/background.png');
+}
+
+.progress .indeterminate {
+  background-color: #303030;
+}
+
+.pcGreen {
+  color: $pcGreen;
+  background-color: $pcGreen;
+}
+
+nav .brand-logo {
+  left: 10px;
+}
+
+nav ul a {
+  font-size: 2rem;
+}
+
+li p {
+  color: #000;
+}
+
+#systemMessage {
+  text-align: center;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  opacity: 0;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: $pcGreen;
+}
+
+#bootBody {
+  text-align: left;
+}
+
+.btn {
+  background-color: $pcGreen;
+  margin: 0 10px;
+}
+
+#bootScroll {
+  animation: 3s bootText;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  position: relative;
+  width: 50%;
+  font-size: 30px;
+  color: $pcGreen;
+}
