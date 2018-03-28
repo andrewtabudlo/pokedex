@@ -1,6 +1,6 @@
 body {
     font-family: 'Ubuntu Mono', monospace;
-    background-image: url('pokedex/images/background.png');
+    background-color: #303030;
 }
 
 nav ul a {
