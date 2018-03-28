@@ -8,6 +8,15 @@ body {
   background-image: url('/images/background.png');
 }
 
+.progress .indeterminate {
+  background-color: #303030;
+}
+
+.pcGreen {
+  color: $pcGreen;
+  background-color: $pcGreen;
+}
+
 nav .brand-logo {
   left: 10px;
 }

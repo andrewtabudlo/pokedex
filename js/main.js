@@ -117,6 +117,7 @@ let getDragonite = function(){
     complete: function() {
       setTimeout(function(){
         $('#kantoButton').addClass('pulse').removeClass('disabled');
+        $('#loadingBar').addClass('scale-out');
         $('#pokemonPic1').attr('src',daenerys.pokemon[0].image);
         $('#pokemonPic2').attr('src',daenerys.pokemon[1].image);
         $('#pokemonPic3').attr('src',daenerys.pokemon[2].image);
