@@ -1,10 +1,15 @@
+@import "partials/fonts";
 @import "partials/scanlines";
-
+@import "partials/animations";
 $pcGreen: #28F781;
-
 body {
-  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.2rem;
+  font-family: 'early_gameboyregular';
   background-image: url('/images/background.png');
+}
+
+nav .brand-logo {
+  left: 10px;
 }
 
 nav ul a {
@@ -16,15 +21,15 @@ li p {
 }
 
 #systemMessage {
-      text-align: center;
-      animation: 1s fadeIn;
-      animation-fill-mode: forwards;
-      animation-delay: 3s;
-      opacity: 0;
-      width: 50%;
-      margin: 0 auto;
-      font-size: 30px;
-      color: $pcGreen;
+  text-align: center;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  opacity: 0;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 30px;
+  color: $pcGreen;
 }
 
 #bootBody {
@@ -36,7 +41,7 @@ li p {
   margin: 0 10px;
 }
 
-.bootText {
+#bootScroll {
   animation: 3s bootText;
   animation-fill-mode: forwards;
   animation-timing-function: linear;
@@ -44,23 +49,4 @@ li p {
   width: 50%;
   font-size: 30px;
   color: $pcGreen;
-}
-
-@keyframes bootText {
-  0%   {bottom: -1500px;}
-  100% {bottom: 6000px; display: none;}
-}
-
-@keyframes fadeIn {
-  0%   {opacity: 0;}
-  10% {opacity: 0.2;}
-  20% {opacity: 0.4;}
-  30% {opacity: 0.6;}
-  40% {opacity: 0.8;}
-  50% {opacity: 0.9;}
-  60% {opacity: 1;}
-  70% {opacity: 0;}
-  80% {opacity: 1;}
-  90% {opacity: 0;}
-  100% {opacity: 1;}
 }

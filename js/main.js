@@ -1,3 +1,5 @@
+M.AutoInit();
+
 class Trainer {
     constructor(pokemon) {
       this.pokemon = [];
@@ -121,29 +123,29 @@ let getDragonite = function(){
         $('#cardTitle1').html('#' + daenerys.pokemon[0].id + ' ' + daenerys.pokemon[0].name);
         $('#cardTitle2').html('#' + daenerys.pokemon[1].id + ' ' + daenerys.pokemon[1].name);
         $('#cardTitle3').html('#' + daenerys.pokemon[2].id + ' ' + daenerys.pokemon[2].name);
-        $('#hp1').html('HP: ' + daenerys.pokemon[0].hp + '/' + daenerys.pokemon[0].hp);
-        $('#hp2').html('HP: ' + daenerys.pokemon[1].hp + '/' + daenerys.pokemon[1].hp);
-        $('#hp3').html('HP: ' + daenerys.pokemon[2].hp + '/' + daenerys.pokemon[2].hp);
-        $('#attack1').html('Attack: ' + daenerys.pokemon[0].attack);
-        $('#attack2').html('Attack: ' + daenerys.pokemon[1].attack);
-        $('#attack3').html('Attack: ' + daenerys.pokemon[2].attack);
-        $('#defense1').html('Defense: ' + daenerys.pokemon[0].defense);
-        $('#defense2').html('Defense: ' + daenerys.pokemon[1].defense);
-        $('#defense3').html('Defense: ' + daenerys.pokemon[2].defense);
-        $('#height1').html('Height: ' + daenerys.pokemon[0].height);
-        $('#height2').html('Height: ' + daenerys.pokemon[1].height);
-        $('#height3').html('Height: ' + daenerys.pokemon[2].height);
-        $('#weight1').html('Weight: ' + daenerys.pokemon[0].weight);
-        $('#weight2').html('Weight: ' + daenerys.pokemon[1].weight);
-        $('#weight3').html('Weight: ' + daenerys.pokemon[2].weight);
+        $('#statsList1').append(`<li class="collection-item">HP: ${daenerys.pokemon[0].hp}/${daenerys.pokemon[0].hp}</li>`);
+        $('#statsList2').append(`<li class="collection-item">HP: ${daenerys.pokemon[1].hp}/${daenerys.pokemon[1].hp}</li>`);
+        $('#statsList3').append(`<li class="collection-item">HP: ${daenerys.pokemon[2].hp}/${daenerys.pokemon[2].hp}</li>`);
+        $('#statsList1').append(`<li class="collection-item">Attack: ${daenerys.pokemon[0].attack}</li>`);
+        $('#statsList2').append(`<li class="collection-item">Attack: ${daenerys.pokemon[1].attack}</li>`);
+        $('#statsList3').append(`<li class="collection-item">Attack: ${daenerys.pokemon[2].attack}</li>`);
+        $('#statsList1').append(`<li class="collection-item">Defense: ${daenerys.pokemon[0].defense}</li>`);
+        $('#statsList2').append(`<li class="collection-item">Defense: ${daenerys.pokemon[1].defense}</li>`);
+        $('#statsList3').append(`<li class="collection-item">Defense: ${daenerys.pokemon[2].defense}</li>`);
+        $('#miscList1').append(`<li class="collection-item">Height: ${daenerys.pokemon[0].height}</li>`);
+        $('#miscList2').append(`<li class="collection-item">Height: ${daenerys.pokemon[1].height}</li>`);
+        $('#miscList3').append(`<li class="collection-item">Height: ${daenerys.pokemon[2].height}</li>`);
+        $('#miscList1').append(`<li class="collection-item">Weight: ${daenerys.pokemon[0].weight}</li>`);
+        $('#miscList2').append(`<li class="collection-item">Weight: ${daenerys.pokemon[1].weight}</li>`);
+        $('#miscList3').append(`<li class="collection-item">Weight: ${daenerys.pokemon[2].weight}</li>`);
         daenerys.pokemon[0].abilities.forEach(function(ability){
-          $('#abilitiesList1').append(`<li class="list-group-item">${ability}</li>`);
+          $('#abilitiesList1').append(`<li class="collection-item">${ability}</li>`);
         });
         daenerys.pokemon[1].abilities.forEach(function(ability){
-          $('#abilitiesList2').append(`<li class="list-group-item">${ability}</li>`);
+          $('#abilitiesList2').append(`<li class="collection-item">${ability}</li>`);
         });
         daenerys.pokemon[2].abilities.forEach(function(ability){
-          $('#abilitiesList3').append(`<li class="list-group-item">${ability}</li>`);
+          $('#abilitiesList3').append(`<li class="collection-item">${ability}</li>`);
         });
       },5000);
       }
@@ -158,7 +160,7 @@ console.log(daenerys);
 
 $('#kantoButton').click(function(){
     event.preventDefault();
-    $('#systemMessage').addClass('d-none');
-    $('#menuScreen').addClass('visible').removeClass('invisible');
-    $('#bootScroll').addClass('d-none');
+    $('#systemMessage').addClass('hide');
+    $('#menuScreen').addClass('visible').removeClass('hide');
+    $('#bootScroll').addClass('hide');
 });
