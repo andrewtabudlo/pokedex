@@ -207,5 +207,5 @@ $('#selector3').click(function(e){
     }, 500);
     setTimeout(function(){
         $('#pokemonCard').removeClass('scale-out');
-    }, 1000);
+    }, 500);
 })
