@@ -1,0 +1,14 @@
+$pcGreen: #28F781;
+%systemFadeIn{
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+%bootScrollAnimation{
+  animation: 3s bootText;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  position: relative;
+}
