@@ -59,8 +59,8 @@ let getSalamence = function(){
             }
         }
         getAbilities();
-        let articuno = new Pokemon(data.id,data.name,data.sprites.front_default,types,data.weight,data.height,data.stats[3].base_stat,data.stats[4].base_stat,data.stats[5].base_stat,abilities);
-        daenerys.addPokemon(articuno);
+        let salamence = new Pokemon(data.id,data.name,data.sprites.front_default,types,data.weight,data.height,data.stats[3].base_stat,data.stats[4].base_stat,data.stats[5].base_stat,abilities);
+        daenerys.addPokemon(salamence);
     }
 })};
 
@@ -85,8 +85,8 @@ let getRayquaza = function(){
             }
         }
         getAbilities();
-        let moltres = new Pokemon(data.id,data.name,data.sprites.front_default,types,data.weight,data.height,data.stats[3].base_stat,data.stats[4].base_stat,data.stats[5].base_stat,abilities);
-        daenerys.addPokemon(moltres);
+        let rayquaza = new Pokemon(data.id,data.name,data.sprites.front_default,types,data.weight,data.height,data.stats[3].base_stat,data.stats[4].base_stat,data.stats[5].base_stat,abilities);
+        daenerys.addPokemon(rayquaza);
     }
 })};
 

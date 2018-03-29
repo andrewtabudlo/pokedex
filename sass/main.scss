@@ -1,9 +1,10 @@
 @import "partials/fonts";
-@import "partials/scanlines";
+// @import "partials/scanlines";
 @import "partials/animations";
 $pcGreen: #28F781;
+
 body {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: 'early_gameboyregular';
   background-image: url('/images/background.png');
 }
@@ -15,6 +16,10 @@ body {
 .pcGreen {
   color: $pcGreen;
   background-color: $pcGreen;
+}
+
+#cardTitle1 #cardTitle2 #cardTitle3 {
+  font-size: 1.5rem;
 }
 
 nav .brand-logo {
@@ -58,4 +63,17 @@ li p {
   width: 50%;
   font-size: 30px;
   color: $pcGreen;
+}
+
+/* centered columns styles */
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
 }
