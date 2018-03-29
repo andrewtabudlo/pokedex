@@ -4,7 +4,7 @@ let daenerys = new Trainer();
 
 function getPokemon(id, trainer){
     return $.ajax({
-    url: `http://pokeapi.salestock.net/api/v2/pokemon/${id}/`,
+    url: `http://pokeapi.co/api/v2/pokemon/${id}/`,
     dataType: 'json',
     method: 'GET',
     })
