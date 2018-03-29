@@ -49,7 +49,8 @@ body {
   font-family: 'early_gameboyregular', 'VT323', monospace;
   background-color: #303030; }
   body #loadingBar {
-    color: #28F781; }
+    color: #28F781;
+    background-color: #303030; }
 
 nav .brand-logo {
   left: 10px; }
@@ -65,10 +66,14 @@ nav .brand-logo {
   color: #28F781; }
 
 .btn {
+  background-color: #28F781;
+  margin-bottom: 20px; }
+
+.progress .indeterminate {
   background-color: #28F781; }
 
 #bootScroll {
-  width: 50%;
+  width: 60%;
   font-size: 30px;
   color: #28F781; }
 

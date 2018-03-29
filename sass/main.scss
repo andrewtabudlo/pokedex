@@ -9,6 +9,7 @@ body {
   background-color: #303030;
   #loadingBar {
     color: $pcGreen;
+    background-color: #303030;
   }
 }
 
@@ -31,11 +32,16 @@ nav .brand-logo {
 
 .btn {
   background-color: $pcGreen;
+  margin-bottom: 20px;
+}
+
+.progress .indeterminate {
+  background-color: $pcGreen;
 }
 
 #bootScroll {
   @extend %bootScrollAnimation;
-  width: 50%;
+  width: 60%;
   font-size: 30px;
   color: $pcGreen;
 }
