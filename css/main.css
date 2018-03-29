@@ -46,7 +46,7 @@
     opacity: 1; } }
 body {
   font-size: 2rem;
-  font-family: 'early_gameboyregular';
+  font-family: 'early_gameboyregular', 'Ubuntu Mono';
   background-color: #303030; }
 
 #loadingBar {
