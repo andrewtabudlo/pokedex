@@ -7,19 +7,17 @@ body {
   font-size: 2rem;
   font-family: 'early_gameboyregular', 'Ubuntu Mono';
   background-color: #303030;
-}
-
-#loadingBar {
-  color: $pcGreen;
-  background-color: #303030;
-}
-
-#cardTitle1 #cardTitle2 #cardTitle3 {
-  font-size: 1.5rem;
+  #loadingBar {
+    color: $pcGreen;
+  }
 }
 
 nav .brand-logo {
   left: 10px;
+}
+
+#cardTitle1 #cardTitle2 #cardTitle3 {
+  font-size: 1.5rem;
 }
 
 #systemMessage {
