@@ -30,7 +30,7 @@ function getPokemon(id, trainer){
 }
 
 
-
+// create initial view and enable user to view page
 let render = function() {
     $('#kantoButton').addClass('pulse').removeClass('disabled');
     $('#loadingBar').addClass('scale-out');
