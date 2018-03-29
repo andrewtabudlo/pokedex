@@ -147,11 +147,12 @@ $('#selector3').click(function(e){
 
 $('form').on('submit',function(e){
     e.preventDefault();
-    let compareName = daenerys.get($('input[type=text]').val()).name;
+    let compareName = daenerys.get($('input[type=search]').val()).name;
     for (let i = 0; i < daenerys.pokemon.length; i++) {
         if (compareName == daenerys.pokemon[i].name) {
             let selectedPokemon = "#selector" + (i+1);
             $(selectedPokemon).trigger('click');
+            $('input[type=search]').val('');
         }
     }
 })
