@@ -1,7 +1,7 @@
+@import "partials/variables";
 @import "partials/fonts";
 // @import "partials/scanlines";
 @import "partials/animations";
-$pcGreen: #28F781;
 
 body {
   font-size: 2rem;
@@ -9,13 +9,9 @@ body {
   background-color: #303030;
 }
 
-.progress .indeterminate {
-  background-color: #303030;
-}
-
-.pcGreen {
+#loadingBar {
   color: $pcGreen;
-  background-color: $pcGreen;
+  background-color: #303030;
 }
 
 #cardTitle1 #cardTitle2 #cardTitle3 {
@@ -26,54 +22,22 @@ nav .brand-logo {
   left: 10px;
 }
 
-nav ul a {
-  font-size: 2rem;
-}
-
-li p {
-  color: #000;
-}
-
 #systemMessage {
+  @extend %systemFadeIn;
   text-align: center;
-  animation: 1s fadeIn;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
-  opacity: 0;
   width: 50%;
   margin: 0 auto;
   font-size: 30px;
   color: $pcGreen;
 }
 
-#bootBody {
-  text-align: left;
-}
-
 .btn {
   background-color: $pcGreen;
-  margin: 0 10px;
 }
 
 #bootScroll {
-  animation: 3s bootText;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  position: relative;
+  @extend %bootScrollAnimation;
   width: 50%;
   font-size: 30px;
   color: $pcGreen;
-}
-
-/* centered columns styles */
-.row-centered {
-  text-align:center;
-}
-.col-centered {
-  display:inline-block;
-  float:none;
-  /* reset the text-align */
-  text-align:left;
-  /* inline-block space fix */
-  margin-right:-4px;
 }

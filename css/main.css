@@ -1,3 +1,15 @@
+#systemMessage {
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+  opacity: 0; }
+
+#bootScroll {
+  animation: 3s bootText;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  position: relative; }
+
 @font-face {
   font-family: 'early_gameboyregular';
   src: url("/fonts/early_gameboy/early_gameboy-webfont.woff2") format("woff2"), url("/fonts/early_gameboy/early_gameboy-webfont.woff") format("woff");
@@ -37,12 +49,9 @@ body {
   font-family: 'early_gameboyregular';
   background-color: #303030; }
 
-.progress .indeterminate {
-  background-color: #303030; }
-
-.pcGreen {
+#loadingBar {
   color: #28F781;
-  background-color: #28F781; }
+  background-color: #303030; }
 
 #cardTitle1 #cardTitle2 #cardTitle3 {
   font-size: 1.5rem; }
@@ -50,49 +59,19 @@ body {
 nav .brand-logo {
   left: 10px; }
 
-nav ul a {
-  font-size: 2rem; }
-
-li p {
-  color: #000; }
-
 #systemMessage {
   text-align: center;
-  animation: 1s fadeIn;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
-  opacity: 0;
   width: 50%;
   margin: 0 auto;
   font-size: 30px;
   color: #28F781; }
 
-#bootBody {
-  text-align: left; }
-
 .btn {
-  background-color: #28F781;
-  margin: 0 10px; }
+  background-color: #28F781; }
 
 #bootScroll {
-  animation: 3s bootText;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  position: relative;
   width: 50%;
   font-size: 30px;
   color: #28F781; }
-
-/* centered columns styles */
-.row-centered {
-  text-align: center; }
-
-.col-centered {
-  display: inline-block;
-  float: none;
-  /* reset the text-align */
-  text-align: left;
-  /* inline-block space fix */
-  margin-right: -4px; }
 
 /*# sourceMappingURL=main.css.map */
