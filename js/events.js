@@ -54,7 +54,7 @@ $('#selector3').click(function(e){
 
 $('form').on('submit',function(e){
   e.preventDefault();
-  let compareName = $('input[type=search]').val();
+  let compareName = $('input[type=search]').val().toLowerCase();
   let searchCounter = 0;
   for (let i = 0; i < daenerys.pokemon.length; i++) {
       if (compareName == daenerys.pokemon[i].name || compareName == daenerys.pokemon[i].id) {
