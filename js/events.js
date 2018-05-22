@@ -1,5 +1,5 @@
-$('#kantoButton').click(function(){
-  event.preventDefault();
+$('#kantoButton').click(function(e){
+  e.preventDefault();
   $('#systemMessage').addClass('hide');
   $('#menuScreen').removeClass('hide');
   $('#bootScroll').addClass('hide');
