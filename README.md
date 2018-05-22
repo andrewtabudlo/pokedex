@@ -8,9 +8,9 @@ andrewtabudlo.github.io/pokedex
 
 ## Technology Used
 
--JavaScript
--jQuery
--SASS
+-JavaScript  
+-jQuery  
+-SASS  
 
 ## Strategy
 
