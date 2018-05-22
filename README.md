@@ -2,6 +2,10 @@
 
 Pokedex website using HTML, CSS, SASS, Materialize, JavaScript, jQuery, AJAX, and Pokemon API.
 
+## Screenshot
+
+![alt text](screenshots/pokedex.png "Pokedex main view")
+
 ## Links
 
 andrewtabudlo.github.io/pokedex
